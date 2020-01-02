@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6b21ce5e-978f-47f9-b26f-ada462655dc3" solutionId="6b21ce5e-978f-47f9-b26f-ada462655dc3" resetWebServer="false" sharePointProductVersion="19.0" name="Bahn" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7d10ce20-6594-473a-bcb8-d2cbe2aaf3a2" />
+  </features>
+</package>
