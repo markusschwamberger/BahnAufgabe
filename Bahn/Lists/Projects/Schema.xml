@@ -4,12 +4,12 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x01008ddfaa944aea454e8d83e9defbe62362" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Name="Location" /><FieldRef ID="{916df2f4-6681-4241-83e4-7c1fbefa4ee5}" Name="Client" /><FieldRef ID="{c103acd6-b130-4310-9d1d-18d5888e7739}" Name="Manager" /><FieldRef ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x01008ddfaa944aea454e8d83e9defbe62362" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Name="Location" /><FieldRef ID="{916df2f4-6681-4241-83e4-7c1fbefa4ee5}" Name="Client" /><FieldRef ID="{c103acd6-b130-4310-9d1d-18d5888e7739}" Name="Manager" /><FieldRef ID="{93ea021b-bdaa-46be-8db9-640ba9f17bde}" Name="Status" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
       
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Type="Text" Group="$Resources:core,Person_Event_Columns;" Name="Location" DisplayName="$Resources:core,Location;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Location" AllowDeletion="TRUE" /><Field Name="Client" ID="{916df2f4-6681-4241-83e4-7c1fbefa4ee5}" DisplayName="Client" Type="Text" /><Field Name="Manager" ID="{c103acd6-b130-4310-9d1d-18d5888e7739}" DisplayName="Manager" Type="Text" /><Field ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" Group="$Resources:core,Document_Columns;" Type="Choice" DisplayName="$Resources:core,Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Status" FillInChoice="TRUE" Required="TRUE"><CHOICES><CHOICE>Surprising</CHOICE><CHOICE>Desired</CHOICE><CHOICE>Expected</CHOICE><CHOICE>Basic</CHOICE></CHOICES><Default>$Resources:core,_Status_NotStarted;</Default></Field></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Type="Text" Group="$Resources:core,Person_Event_Columns;" Name="Location" DisplayName="$Resources:core,Location;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Location" AllowDeletion="TRUE" /><Field Name="Client" ID="{916df2f4-6681-4241-83e4-7c1fbefa4ee5}" DisplayName="Client" Type="Text" /><Field Name="Manager" ID="{c103acd6-b130-4310-9d1d-18d5888e7739}" DisplayName="Manager" Type="Text" /><Field ID="{93ea021b-bdaa-46be-8db9-640ba9f17bde}" Name="Status" DisplayName="Status" Type="Choice" Required="TRUE" Group="Custom Site Columns" JSLink="~site/Scripts/RuleRendering.js"><CHOICES><CHOICE>Surprising</CHOICE><CHOICE>Desired</CHOICE><CHOICE>Expected</CHOICE><CHOICE>Basic</CHOICE></CHOICES></Field></Fields>
     <Views>
       
       
@@ -37,7 +37,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Location" /><FieldRef Name="Client" /><FieldRef Name="Manager" /><FieldRef Name="_Status" /></ViewFields>
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Location" /><FieldRef Name="Client" /><FieldRef Name="Manager" /><FieldRef Name="Status" /></ViewFields>
         <Query>
           <OrderBy>
             

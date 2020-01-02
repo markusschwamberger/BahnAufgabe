@@ -65,17 +65,23 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="ProjectRule\ProjectRuleInstance\SharePointProjectItem.spdata">
+    <None Include="Lists\ProjectRule\ProjectRuleInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{aebae390-f6ba-4017-9dae-fe41e1a0eb63}</SharePointProjectItemId>
     </None>
-    <None Include="ProjectRule\SharePointProjectItem.spdata">
+    <None Include="Lists\ProjectRule\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c2389e1b-df7c-4521-b619-1824e359e444}</SharePointProjectItemId>
     </None>
-    <None Include="Projects\ProjectsInstance\SharePointProjectItem.spdata">
+    <None Include="Lists\Projects\ProjectsInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ae65d8eb-da23-4207-9853-7c9f0ca8afb9}</SharePointProjectItemId>
     </None>
-    <None Include="Projects\SharePointProjectItem.spdata">
+    <None Include="Lists\Projects\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{371bc96c-5d5b-4e7d-90ab-2a87ba6fee5d}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d42f0d6c-ee07-4375-bf95-435477aec6df}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8d215e9-0320-4340-9ffb-51564492dd68}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup />
@@ -83,16 +89,20 @@
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="ProjectRule\EditDlg.htm" />
-    <Content Include="ProjectRule\Elements.xml" />
-    <Content Include="ProjectRule\FileDlg.htm" />
-    <Content Include="ProjectRule\ProjectRuleInstance\Elements.xml" />
-    <Content Include="ProjectRule\Repair.aspx" />
-    <Content Include="ProjectRule\Schema.xml" />
-    <Content Include="ProjectRule\Upload.aspx" />
-    <Content Include="Projects\Elements.xml" />
-    <Content Include="Projects\ProjectsInstance\Elements.xml" />
-    <Content Include="Projects\Schema.xml" />
+    <Content Include="Lists\ProjectRule\EditDlg.htm" />
+    <Content Include="Lists\ProjectRule\Elements.xml" />
+    <Content Include="Lists\ProjectRule\FileDlg.htm" />
+    <Content Include="Lists\ProjectRule\ProjectRuleInstance\Elements.xml" />
+    <Content Include="Lists\ProjectRule\Repair.aspx" />
+    <Content Include="Lists\ProjectRule\Schema.xml" />
+    <Content Include="Lists\ProjectRule\Upload.aspx" />
+    <Content Include="Lists\Projects\Elements.xml" />
+    <Content Include="Lists\Projects\ProjectsInstance\Elements.xml" />
+    <Content Include="Lists\Projects\Schema.xml" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\RuleRendering.js" />
+    <Content Include="Scripts\Sample.txt" />
+    <Content Include="Site Columns\Status\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

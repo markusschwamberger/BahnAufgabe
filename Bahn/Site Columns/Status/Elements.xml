@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{93ea021b-bdaa-46be-8db9-640ba9f17bde}"
+       Name="Status"
+       DisplayName="Status"
+       Type="Choice"
+       Required="TRUE"
+       Group="Custom Site Columns"
+       JSLink="~site/Scripts/RuleRendering.js">
+    <CHOICES>
+      <CHOICE>Surprising</CHOICE>
+      <CHOICE>Desired</CHOICE>
+      <CHOICE>Expected</CHOICE>
+      <CHOICE>Basic</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

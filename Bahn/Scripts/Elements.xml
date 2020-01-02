@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\Sample.txt" Url="Scripts/Sample.txt" />
+    <File Path="Scripts\RuleRendering.js" Url="Scripts/RuleRendering.js" />
+  </Module>
+</Elements>
