@@ -10,15 +10,32 @@
 
 function renderStatus(ctx) {
     var statusName = ctx.CurrentItem[ctx.CurrentFieldSchema.Name];
-    var color = readFile(statusName);
+    var color = readHardCoded(statusName);
+    //var color = readFromFile(statusName);
     return "<span style='color:" + color + "'>" + statusName + "</span>";
 }
 
-function readFile(statusName) {
+function readHardCoded(statusName) {
+    switch (statusName.toLowerCase()) {
+        case "surprising":
+            return "Blue";
+        case "desired":
+            return "Green";
+        case "expected":
+            return "Yellow";
+        case "basic":
+            return "Red";
+        default:
+            return "Black";
+    }
+}
+
+function readFromFile(statusName) {
     var clientContext;
     var oWebsite;
     var fileUrl;
 
+    // und das hier geht aus irgendeinem Grund nicht...
     clientContext = new SP.ClientContext.get_current();
     oWebsite = clientContext.get_web();
 
